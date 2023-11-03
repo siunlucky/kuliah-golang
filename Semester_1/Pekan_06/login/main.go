@@ -9,7 +9,7 @@ func main()  {
 	var username, password string;
 
 	attempts = -1;
-	for username != "admin" && password != "admin" {
+	for username != "admin" || password != "admin" {
 		fmt.Scan(&username, &password)
 		attempts++
 	}

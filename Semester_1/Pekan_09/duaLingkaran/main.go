@@ -11,7 +11,7 @@ func main() {
     fmt.Scan(&x, &y, &z)
 	fmt.Println("");
 
-    hasil = x + y < z
+    hasil = x + y < z || x + z < y || z + y < x
 
-    fmt.Println(hasil)
+    fmt.Println("Apakah beririsan?", hasil)
 }

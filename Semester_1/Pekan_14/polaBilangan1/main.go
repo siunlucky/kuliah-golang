@@ -10,10 +10,12 @@ func main()  {
 	fmt.Scan(&x)
 	fmt.Println("")
 
-	for i := 0; i < x; i++ {
-		for j := 1; j <= x; j++ {
-			fmt.Print(j)
+	for i := 1; i <= x; i++ { 
+		for j := 1; j <= x; j++ { 
+			fmt.Print(j) 
 		}
 		fmt.Println("")
 	}
 }
+
+

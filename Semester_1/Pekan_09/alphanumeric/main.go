@@ -6,12 +6,14 @@ import (
 
 func main() {
 	var x string
-	var hasil bool
+	var hasil2 bool
 
 	fmt.Scan(&x)
 
-	hasil = ("a" <= x && x <= "z") || ("A" <= x && x <= "Z")
+	// hasil1 = (65 <= x && x <= 90) || (97 <= x && x <= 122)
+	hasil2 = ("a" <= x && x <= "z") || ("A" <= x && x <= "Z")
 
-	fmt.Println(hasil);
+	// fmt.Println(hasil1);
+	fmt.Println(hasil2);
 }
  

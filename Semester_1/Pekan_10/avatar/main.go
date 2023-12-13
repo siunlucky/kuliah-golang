@@ -5,22 +5,25 @@ import "fmt"
 func main() {
     var jumlahOrang, besar, kecil int
     fmt.Print("Masukkan jumlah orang: ")
-    fmt.Scan(&jumlahOrang)
+    fmt.Scan(&jumlahOrang) // 21
+
+    besar = 0
+    kecil = 0
 
     for jumlahOrang >= 5 && besar < 3 {
-        besar++
-        jumlahOrang -= 5
-    }
+        besar++ 
+        jumlahOrang -= 5 
+    } 
 
-    if jumlahOrang >= 1 && besar < 3 {
+    if jumlahOrang >= 1 && besar < 3 { 
         besar++
         jumlahOrang -= jumlahOrang
-    }
+    } 
 
-    for jumlahOrang >= 2 && kecil < 5 {
-        kecil++
+    for jumlahOrang >= 2 && kecil < 5 { 
+        kecil++ 
         jumlahOrang -= 2
-    }
+    } 
 
     if jumlahOrang >= 1 && kecil < 5 {
         kecil++

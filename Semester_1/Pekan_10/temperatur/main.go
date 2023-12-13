@@ -1,22 +1,17 @@
 package main
 
-import (
-    "fmt"
-)
+import "fmt"
 
 func main() {
-    var a, b, c float64;
+	var a, b, c, d, e float64
 
-    fmt.Scan(&a, &b)
-	fmt.Println("");
+	fmt.Scan(&a, &b, &c, &d, &e)
 
-	c = a - b
-	if c > 0 {
-		fmt.Println("Penurunan sebesar", c)
-	} else if c == 0{
-		fmt.Println("Tetap")
+	if a < b && b < c && c < d && d < e {
+		fmt.Println("Hasil: Stabil naik")
+	} else if a > b && b > c && c > d && d > e {
+		fmt.Println("Hasil: Stabil turun")
 	} else {
-		fmt.Println("Peningkatan sebesar", c * -1)
+		fmt.Println("Hasil: Tidak stabil")
 	}
-
 }

@@ -9,7 +9,7 @@ func main()  {
 	var isOne bool;
 
 	fmt.Scan(&x); // 12345
-
+	
 	isOne = true;
 	
 	for x > 0 && isOne == true {

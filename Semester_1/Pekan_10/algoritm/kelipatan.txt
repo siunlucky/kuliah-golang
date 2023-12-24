@@ -1,0 +1,18 @@
+program kelipatan
+
+kamus
+    x : integer
+algoritma
+    input(x)
+
+	if ((x mod 5) == 0) and ((x mod 3) == 0) then
+		output("Kelipatan 3")
+		output("Kelipatan 5")
+	else if (x mod 5) == 0 then
+		output("Kelipatan 5")
+	else if (x mod 3) == 0 then
+		output("Kelipatan 3")
+    else 
+        output("")
+	endif
+endprogram

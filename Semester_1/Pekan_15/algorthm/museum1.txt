@@ -1,0 +1,32 @@
+program museum1
+
+kamus
+    x, increase, lastVisitor, sum, n : integer
+	average : real
+algoritma
+    lastVisitor <- 0
+    sum <- 0
+    increase <- -1
+    n <- 0
+
+    while (x >= 0) and (x <= 200) do
+		input(x)
+
+		if (x >= 0) and (x <= 200) then
+			if x > lastVisitor then
+				increase <- increase + 1
+			endif
+			sum <- sum + x
+			n <- n + 1
+			lastVisitor <- x
+		endif
+	endwhile
+
+    if increase < 0 then
+		increase <- 0
+	endif
+
+    average <- sum / n
+
+    output(increase, average)
+endprogram

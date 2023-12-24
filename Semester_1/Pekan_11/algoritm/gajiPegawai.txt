@@ -1,0 +1,37 @@
+program gajiPegawai
+
+kamus
+    jabatan : string
+	masaKerja, jumlahAnak, gajiPokok, tunjanganAnak : integer
+algoritma
+    input(jabatan, masaKerja, jumlahAnak)
+
+    if jumlahAnak > 3 then
+		jumlahAnak <- 3
+	endif
+
+	if jabatan == "Staf" then
+		gajiPokok <- 4000
+		tunjanganAnak <- jumlahAnak * 100
+
+		if masaKerja < 5 then
+			tunjanganAnak <- tunjanganAnak * 0
+		else if masaKerja > 10 then
+			gajiPokok <- gajiPokok + 1000
+		endif
+		
+	else if jabatan == "Manager" then
+		tunjanganAnak <- jumlahAnak * 300
+		gajiPokok <- 8500
+
+		if masaKerja > 10 then
+			gajiPokok <- gajiPokok + 1500
+		endif
+
+	else if jabatan == "Direktur" then
+		gajiPokok <- 20000
+		tunjanganAnak <- jumlahAnak * 500
+	endif
+
+	fmt.Println(gajiPokok, "+", tunjanganAnak, "=", gajiPokok + tunjanganAnak)
+endprogram

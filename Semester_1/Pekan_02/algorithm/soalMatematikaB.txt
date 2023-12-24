@@ -1,0 +1,11 @@
+program soalMatematikaB
+
+kamus
+    x, f : real
+algoritma
+    input(x)
+
+    f <- ((x * x * x) + (3.0 * x)) / ((x * x * x * x) - (3.0 * (x * x)) + 4.0)
+    
+    output(f)
+endprogram

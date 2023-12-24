@@ -1,0 +1,12 @@
+program kabisat
+
+kamus
+    x : integer
+    hasil : boolean
+algoritma
+    input(x)
+
+    hasil <- (x mod 4 == 0 and x mod 100 != 0) or x mod 400 == 0
+
+    output(hasil)
+endprogram

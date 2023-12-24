@@ -1,0 +1,12 @@
+program duaLingkaran
+
+kamus
+    x, y, z : integer
+    hasil : boolean
+algoritma
+    input(x, y, z)
+
+    hasil <- ((x + y) < z) or ((x + z) < y) or ((z + y) < x)
+
+    output(hasil)
+endprogram

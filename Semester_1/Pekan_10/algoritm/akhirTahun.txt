@@ -1,0 +1,25 @@
+program akhirTahun
+
+kamus
+    x : integer
+    isCard, isDiscount, isCashback : boolean
+algoritma
+    input(x, isCard)
+
+	isDiscount <- x >= 100000
+	isCashback <- (x >= 200000) and (isCard == true)
+	isCard <- (isCard == true) and (isDiscount == true)
+
+	if isDiscount == true then
+		x <- x - ((x * 10) div 100)
+	endif
+
+	if isCashback == true then
+		x <- x - 75000
+	endif
+
+	output("Kartu?", isCard)
+	output("Diskon?", isDiscount)
+	output("Cashback?", isCashback)
+	output("Rp.", x)
+endprogram

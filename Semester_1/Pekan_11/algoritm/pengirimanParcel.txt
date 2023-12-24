@@ -1,0 +1,24 @@
+program pengirimanParcel
+
+kamus
+    x, kg, gr, hargaKg, hargaGr : integer
+algoritma
+    input(x)
+
+	kg <- x div 1000
+	gr <- x - (kg * 1000)
+
+	hargaKg <- kg * 10000
+	if kg >= 10 then
+		hargaGr <- 0
+	else
+		if gr < 500 then
+			hargaGr <- gr * 15
+		else 
+			hargaGr <- gr * 5
+		endif
+	endif
+
+	output(kg, "kg +", gr, "gr")
+	output("Rp.", hargaKg, "+ Rp.", hargaGr, "= Rp.", hargaKg + hargaGr)
+endprogram

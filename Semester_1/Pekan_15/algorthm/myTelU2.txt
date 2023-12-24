@@ -1,0 +1,17 @@
+program myTelU2
+
+kamus
+    x : integer
+algoritma
+    while x < 50 do
+		input(x)
+	endwhile
+	
+	if x > 200 then
+		output("Gold user")
+	else if (x >= 100) and (x <= 200) then
+		output("Platinum user")
+	else if (x >= 50) and (x < 100) then
+		output("Silver user")
+	endif
+endprogram

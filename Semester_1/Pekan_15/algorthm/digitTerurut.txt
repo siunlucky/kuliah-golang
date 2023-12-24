@@ -1,0 +1,34 @@
+program digitTerurut
+
+kamus
+    x, prev, now : integer
+	isAscending, isDecreasing : boolean
+algoritma
+    input(x)
+
+    prev <- x mod 10
+	x <- x div 10
+
+    isAscending <- true
+	isDecreasing <- true
+
+    while x > 0 do
+		now <- x mod 10
+		if prev > now then
+			isDecreasing <- false
+		else if prev < now then
+			isAscending <- false
+		endif
+		x <- x div 10
+
+		prev <- now
+	endwhile
+
+    if isAscending == true then
+		output("ascending")
+	else if isDecreasing == true then
+		output("decreasing")
+	else
+		output("tidak terurut")
+	endif
+endprogram

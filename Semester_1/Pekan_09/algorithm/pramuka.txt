@@ -1,0 +1,18 @@
+program pramuka
+
+kamus
+    n, i : integer
+    a, b, c, d, e, hasil : boolean
+algoritma
+    input(n)
+
+	hasil <- true
+    i = 0
+    while (i < n) and (hasil == true) do
+        input(a, b, c, d, e)
+        i <- i + 1
+        hasil <- (a == true) and (b == true) and (c == true) and (d == true) and (e == true)
+    endwhile
+
+    output(hasil)
+endprogram

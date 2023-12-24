@@ -1,0 +1,16 @@
+program profit
+
+kamus
+    a, b, c : real
+algoritma
+    input(a, b)
+
+	c <- a - b
+	if c > 0 then
+		output("Penurunan sebesar", c)
+	else if c == 0 then
+		output("Tetap")
+	else 
+		output("Peningkatan sebesar", c * -1)
+    endif
+endprogram

@@ -1,0 +1,12 @@
+program alphanumeric
+
+kamus
+    x : string
+	hasil : boolean
+algoritma
+    input(x)
+
+    hasil <- ("a" <= x and x <= "z") or ("A" <= x and x <= "Z")
+
+    output(hasil)
+endprogram

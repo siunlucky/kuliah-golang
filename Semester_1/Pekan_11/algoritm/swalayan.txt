@@ -1,0 +1,45 @@
+program swalayan
+
+kamus
+    membership : string
+	a, b, c, d, e : integer
+	isCashback, isDiscount : boolean
+	cashback, discount : real
+algoritma
+    input(membership, a, b, c, d, e)
+
+	isCashback <- false
+	isDiscount <- false
+
+	if ((a mod 2) == 1) and ((b mod 2) == 1) and ((c mod 2) == 1) and ((d mod 2) == 1) and ((e mod 2) == 1) then
+		isDiscount <- true
+	else if ((a mod 2) == 0) and ((b mod 2) == 0) and ((c mod 2) == 0) and ((d mod 2) == 0) and ((e mod 2) == 0) then
+		isCashback <- true
+	else
+		isDiscount <- true
+		isCashback <- true
+	endif
+
+	if isCashback == true then
+		cashback <- 3.1 * (a + b + c)
+	endif
+
+	if isDiscount == true then
+		discount <- 1.7 * (e + d + c)
+	endif
+
+	if membership == "Yes" then
+		cashback <- cashback + (cashback * 15 / 100)
+		discount <- discount + (discount * 15 / 100)
+	endif
+
+	if cashback > 35 then
+		cashback <- 35
+	endif
+
+	if discount > 50 then
+		discount <- 50
+	endif
+
+	output("Cashback:", cashback, "% Diskon:", discount, "%")
+endprogram

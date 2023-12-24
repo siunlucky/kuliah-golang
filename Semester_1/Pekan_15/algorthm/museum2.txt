@@ -1,0 +1,18 @@
+program museum2
+
+kamus
+    x, sum, i : integer
+algoritma
+    sum <- 0
+
+    for i <- 1 to 5 do
+		x <- -1
+		while (x < 0) or (x > 200) do
+			output("Hari ", i, " : ")
+			input(x)
+		endwhile
+		sum <- sum + x
+	endfor
+
+	output("Jumlah pengunjung :", sum)
+endprogram

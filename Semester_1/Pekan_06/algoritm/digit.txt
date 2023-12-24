@@ -1,0 +1,17 @@
+program digit
+
+kamus
+    x, y, total : integer
+algoritma
+    input(x)
+
+    total <- 0
+    while x > 0 do
+		y <- x mod 10
+		x <- x div 10
+		output(y, " ")
+		total <- total + y
+	endwhile
+
+	output(total)
+endprogram

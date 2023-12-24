@@ -1,0 +1,29 @@
+program ojol
+
+kamus
+    h, m : integer
+	km, harga : real
+algoritma
+    input(h, m, km)
+
+	if (h >= 5) and (h < 22 or h == 22 and m == 0) then
+		if (h >= 5 and (h < 9 or h == 9 and m == 0)) or (h >= 16 and (h < 19 or h == 19 and m == 0)) then
+			if (km > 0) and (km <= 10) then
+				harga <- km * 5000
+			else if (km > 10) and (km <= 20) then
+				harga <- km * 4500
+			else
+				output("Maaf, kami tidak bisa melayani pesanan anda.")
+			endif
+		else
+			if (km > 0) and (km <= 20) then
+				harga <- km * 4000
+			else
+				output("Maaf, kami tidak bisa melayani pesanan anda.")
+			endif
+		endif
+		output(harga)
+	else
+		output("Maaf, kami tidak bisa melayani pesanan anda.")
+	endif
+endprogram

@@ -1,0 +1,15 @@
+program miniMarket
+
+kamus
+    x : integer
+    isCard, isDiscount, isCashback : boolean
+algoritma
+    input(x, isCard)
+
+	isDiscount <- x >= 100000
+	isCashback <- (x >= 200000) and (isCard == true)
+
+	output("Kartu?", isCard)
+	output("Diskon?", isDiscount)
+	output("Cashback?", isCashback)
+endprogram

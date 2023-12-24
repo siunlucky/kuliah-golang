@@ -1,0 +1,16 @@
+program cangkirKopi
+
+kamus
+    n, m, x, y, total : integer
+algoritma
+    input(n, m, x, y)
+
+    total <- 0
+	while (x <= n) and (y <= m) do
+		n <- n - x
+		m <- m - y
+        total <- total + 1
+	endwhile
+    
+	output(total)
+endprogram

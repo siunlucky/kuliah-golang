@@ -1,0 +1,13 @@
+program barisBilangan
+
+kamus
+    a, b, c, d, e : integer
+algoritma
+    input(a, b)
+
+	c <- a + b
+	d <- b + c
+	e <- c + d
+
+	output(c, d, e)
+endprogram

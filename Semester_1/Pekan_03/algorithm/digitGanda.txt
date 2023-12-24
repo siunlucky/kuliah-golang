@@ -1,0 +1,14 @@
+program digitGanda
+
+kamus
+    x, digitPertama, digitKedua, hasil : integer
+algoritma
+    input(x)
+	
+	digitPertama <- x div 10
+	digitKedua <- x mod 10
+	
+	hasil <- digitPertama * 1000 + digitPertama * 100 + digitKedua * 10 + digitKedua
+
+	output(hasil)
+endprogram

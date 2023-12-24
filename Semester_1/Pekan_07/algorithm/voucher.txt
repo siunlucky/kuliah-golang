@@ -1,0 +1,19 @@
+program voucher
+
+kamus
+    x, a, b, c, d : integer
+	diskon, cashback : boolean
+algoritma
+    input(x)
+
+	a <- x div 1000
+	b <- (x div 100) mod 10
+	c <- (x div 10) mod 10
+	d <- x mod 10
+
+	diskon <- ((b * 10 + c) mod 2) == 0
+	cashback <- (d != 0) && (((a + c) mod d) == 0)
+
+	output("Diskon?", diskon)
+	output("Cashback?", cashback)
+endprogram

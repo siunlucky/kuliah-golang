@@ -1,0 +1,33 @@
+program tigaBilangan
+
+kamus
+    a, b, c, x, y : integer
+algoritma
+    input(a, b, c)
+
+    if a > b then
+        x <- a
+        y <- b
+
+        a <- y
+        b <- x
+    endif
+
+    if b > c then
+        x <- b
+        y <- c
+
+        b <- y
+        c <- x
+    endif
+
+    if a > b then 
+        x <- a
+        y <- b
+
+        a <- y
+        b <- x
+    endif
+
+	output(a, b, c)
+endprogram

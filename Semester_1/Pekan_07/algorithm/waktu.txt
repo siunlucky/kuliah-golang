@@ -1,0 +1,14 @@
+program waktu
+
+kamus
+    s, j, m, d : integer
+algoritma
+    input(s)
+
+    j <- s div 3600
+	s <- s mod 3600
+	m <- s div 60
+	d <- s mod 60
+
+	output(j, "jam", m, "menit dan", d, "detik");
+endprogram

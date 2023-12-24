@@ -1,0 +1,18 @@
+program polaBilangan4
+
+kamus
+    x, i, j : integer
+algoritma
+    input(x)
+
+    for i <- 1 to x do
+		for j <- 1 to x do
+			if (j == 1) or (j == x) or (i == 1) or (i == x) then
+				output(i)
+			else
+				output(" ")
+			endif
+		endfor
+		output("")
+	endfor
+endprogram

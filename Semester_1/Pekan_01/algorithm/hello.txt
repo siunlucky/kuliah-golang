@@ -1,0 +1,10 @@
+program lemariBaju
+
+kamus
+    
+algoritma
+    output("Nama      : Faiz Elfahad Kurniawan")
+	output("NIM       : 103012300408")
+	output("Kelas     : IF-47-11")
+	output("Cita-cita : Programmer")
+endprogram

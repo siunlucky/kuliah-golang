@@ -1,0 +1,40 @@
+program temperatur
+
+kamus
+    x, min, max, lastX, sum, n : integer
+	average : real
+	isLoop : boolean
+algoritma
+    isLoop <- true
+	average <- 0
+	min <- 0
+	max <- 0
+	lastX <- 0
+	sum <- 0
+	n <- 0
+
+    while isLoop == true do
+		input(x)
+		if (lastX == 0) and (x == 0) then
+			isLoop <- false
+		endif
+
+		if min > x then
+			min <- x
+		endif
+
+		if max < x then
+			max <- x
+		endif
+
+		sum <- sum + x
+		lastX <- x
+		n <- n + 1
+	endwhile
+
+	average <- sum / (n - 1)
+	
+	output(max)
+	output(min)
+	output(average)
+endprogram

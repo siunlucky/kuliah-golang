@@ -1,0 +1,11 @@
+program energi
+
+kamus
+    e0, c, e1, hasil : integer
+algoritma
+    input(e0, c, e1)
+
+    hasil <- (e0 - e1) div c
+
+	output(hasil)
+endprogram

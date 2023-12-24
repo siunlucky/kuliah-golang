@@ -1,0 +1,20 @@
+program fibonacci
+
+kamus
+    a, b, n, i, x, y : integer
+algoritma
+    input(n)
+
+    a <- 0
+	b <- 1
+    for i <- 0 to n do
+        output(a, " ")
+
+		x <- a
+		y <- b
+
+        a <- y
+		b <- x + y
+    endfor
+
+endprogram

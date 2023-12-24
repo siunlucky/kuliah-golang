@@ -1,0 +1,11 @@
+program penduduk
+
+kamus
+    jumlahPendudukAwal, jumlahKelahiran, jumlahImigrasi, jumlahKematian, jumlahEmigrasi, hasil : integer
+algoritma
+    input(jumlahPendudukAwal, jumlahKelahiran, jumlahImigrasi, jumlahKematian, jumlahEmigrasi)
+
+	hasil <- jumlahPendudukAwal + jumlahKelahiran + (jumlahImigrasi - (jumlahKematian + jumlahEmigrasi))
+
+	output(hasil)
+endprogram

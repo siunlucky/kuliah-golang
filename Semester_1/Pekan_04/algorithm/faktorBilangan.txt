@@ -1,0 +1,12 @@
+program faktorBilangan
+
+kamus
+    x, y : integer
+	isFactor : boolean
+algoritma
+    input(x, y)
+
+	isFactor <- (y mod x) == 0
+
+	output(isFactor)
+endprogram

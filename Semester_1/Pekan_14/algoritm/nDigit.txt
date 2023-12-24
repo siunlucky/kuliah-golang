@@ -1,0 +1,18 @@
+program nDigit
+
+kamus
+    x, hasil, digit : integer
+algoritma
+    input(x)
+
+    hasil <- x mod 10
+    while x > 0 do
+		digit <- x mod 10
+		if digit > hasil then
+			hasil <- digit
+		endif
+		x <- x div 10
+	endwhile
+
+	output(hasil)
+endprogram

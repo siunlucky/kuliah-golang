@@ -1,0 +1,16 @@
+program dompet
+
+kamus
+    x, total : integer
+algoritma
+    total <- 0
+	x <- 1
+
+	while x != 0 do
+		input(x)
+		total <- total + x
+	endwhile
+
+	output(total);
+
+endprogram

@@ -1,0 +1,29 @@
+program gerbangTol
+
+kamus
+    x : string
+	a, b, c : integer
+	isLoop : boolean
+algoritma
+    isLoop <- true
+	a <- 0
+	b <- 0
+	c <- 0
+
+    while isLoop == true do
+		fmt.Scan(&x)
+		if x == "A" then
+			a <- a + 1
+		else if x == "B" then
+			b <- b + 1
+		else if x == "C" then
+			c <- c + 1
+		else 
+			isLoop <- false
+		endif
+	endwhile
+	
+	output("Tipe A =", a)
+	output("Tipe B =", b)
+	output("Tipe C =", c)
+endprogram

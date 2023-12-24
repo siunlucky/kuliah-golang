@@ -1,0 +1,16 @@
+program bidangPersegi
+
+kamus
+    n, s, l, k, i : integer
+algoritma
+    input(n)
+
+	for i <- 1 to n do
+		input(s)
+
+		l <- s * s
+		k <- s * 4
+        
+		output(l, k)
+	endfor
+endprogram

@@ -1,0 +1,16 @@
+program tankiAir
+
+kamus
+    t, v, tv : integer
+	isFull : boolean
+algoritma
+    input(t)
+
+    tv <- 0
+    while tv < t do
+        input(v)
+        tv <- tv + v
+        isFull <- tv >= t
+        output(isFull)
+    endwhile
+endprogram

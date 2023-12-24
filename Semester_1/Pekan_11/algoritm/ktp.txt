@@ -1,0 +1,14 @@
+program ktp
+
+kamus
+    x : integer
+	isKk : boolean
+algoritma
+    input(x, isKk)
+
+	if (x >= 17) and (isKk == true) then
+		output("bisa membuat KTP")
+	else
+		output("belum bisa membuat KTP")
+	endif
+endprogram

@@ -1,0 +1,18 @@
+program motorKopling
+
+kamus
+    gigi : integer
+    isClutchPulled, isPedalPressed : boolean
+algoritma
+    input(gigi, isClutchPulled, isPedalPressed)
+
+    if (isClutchPulled == false) and (isPedalPressed == false) then
+        output("Motor mati")
+    else if isClutchPulled == true then
+        output("Mesin menyala dan motor tidak berjalan")
+    else if (isClutchPulled == false) and (gigi > 0) and (isPedalPressed == true) then
+        output("Motor Berjalan")
+    else
+        output("Mesin menyala dan motor tidak berjalan")
+    endif
+endprogram

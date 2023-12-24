@@ -1,0 +1,11 @@
+program soalMatematikaA
+
+kamus
+    x, y, f : real
+algoritma
+    input(x, y)
+
+    f <- (1.0 / ((3.0 * (x * x)) + 10.0)) + (10.0 * y) + 7.0
+    
+    output(f)
+endprogram

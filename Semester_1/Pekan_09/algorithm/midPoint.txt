@@ -1,0 +1,12 @@
+program midPoint
+
+kamus
+    x, y, z : real
+    hasil : boolean
+algoritma
+    input(x, y, z)
+
+    hasil <- (((x + y) / 2.0) == z) or (((x + z) / 2.0) == y) or (((y + z) / 2.0) == x)
+
+    output(hasil)
+endprogram

@@ -1,0 +1,15 @@
+program temperatur
+
+kamus
+    a, b, c, d, e : real
+algoritma
+    input(a, b, c, d, e)
+
+	if (a < b) and (b < c) and (c < d) and (d < e) then
+		output("Hasil: Stabil naik")
+	else if (a > b) and (b > c) and (c > d) and (d > e) then
+		output("Hasil: Stabil turun")
+	else
+		output("Hasil: Tidak stabil")
+	endif
+endprogram

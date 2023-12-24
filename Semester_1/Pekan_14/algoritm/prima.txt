@@ -1,0 +1,23 @@
+program prima
+
+kamus
+    x, i, count : integer
+	isPrima : boolean
+algoritma
+    input(x)
+
+    count <- 0
+	isPrima <- true
+
+    for i <- 1 to x do
+		if (x mod i) == 0 then
+			count <- count + 1
+		endif
+	endfor
+
+	if count != 2 then
+		isPrima <- false
+	endif
+
+	output(isPrima)
+endprogram

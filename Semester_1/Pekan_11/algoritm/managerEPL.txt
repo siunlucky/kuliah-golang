@@ -1,0 +1,13 @@
+program managerEPL
+
+kamus
+    a, b, c, d, e : string
+algoritma
+    input(a, b, c, d, e)
+
+    if (a == "kalah") and (b == "kalah") and (c == "kalah") and (d == "kalah") and e == "kalah" then
+		output("dipecat")
+	else
+		output("tidak dipecat")
+	endif
+endprogram

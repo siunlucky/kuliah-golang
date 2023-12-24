@@ -1,0 +1,36 @@
+program ligaSepakBola
+
+kamus
+    a, b, c, d, max, min : integer
+algoritma
+    input(a, b, c, d)
+
+    max = a
+	min = a
+
+    if b > max then
+        max = b
+    endif
+
+    if c > max then
+        max = c
+    endif
+
+    if d > max then
+        max = d
+    endif
+
+    if b < min then
+        min = b
+    endif
+
+    if c < min then
+        min = c
+    endif
+    
+    if d < min then
+        min = d
+    endif
+
+	output(max, min)
+endprogram

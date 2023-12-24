@@ -1,0 +1,12 @@
+program permukaanBola
+
+kamus
+    r, pi, lpb : real
+algoritma
+    input(r)
+
+	pi <- 22.0 / 7.0
+	lpb <- 4.0 * pi * (r * r)
+
+	output(lpb)
+endprogram

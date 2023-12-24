@@ -1,0 +1,22 @@
+program kelipatanPersekutuanTerkecil
+
+kamus
+    x, y, a, b, k, l, kpk : integer
+algoritma 
+    input(x, y)
+
+    a <- x
+    b <- y
+
+    while b != 0 do
+        k <- b
+        l <- a mod b
+
+        a <- k
+        b <- l
+    endwhile
+
+    kpk <- (x * y) div a
+
+    output(kpk)
+endprogram

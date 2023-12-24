@@ -1,0 +1,16 @@
+program login
+
+kamus
+    attempts : integer
+	username, password : string
+algoritma
+    attempts <- -1
+    
+	while (username != "admin") or (password != "admin") do
+		input(username, password)
+        attempts <- attempts + 1
+	endwhile
+
+	output(attempts)
+	output("Login berhasil")
+endprogram

@@ -1,0 +1,17 @@
+program lebarDaun
+
+kamus
+    n, x, hasil : integer
+algoritma
+    input(n)
+
+    hasil <- 0
+	for i <- 1 to n do
+		input(x)
+		if hasil < x then
+			hasil <- x
+		endif
+	endfor
+
+	output(hasil)
+endprogram

@@ -1,0 +1,12 @@
+program kapital
+
+kamus
+    x : string
+    hasil : boolean
+algoritma
+    input(x)
+
+	hasil <- (x >= "A") and (x <= "Z")
+
+	output(hasil)
+endprogram

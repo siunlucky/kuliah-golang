@@ -1,0 +1,13 @@
+program faktorial
+
+kamus
+    n, i : integer
+algoritma
+    input(n)
+
+    for i <- (n - 1) down to 1 do
+		n <- n * i
+	endfor
+
+    output(n)
+endprogram

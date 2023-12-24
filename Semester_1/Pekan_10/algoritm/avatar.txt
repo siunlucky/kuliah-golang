@@ -1,0 +1,43 @@
+program avatar
+
+kamus
+    jumlahOrang, besar, kecil : int
+algoritma
+    input(jumlahOrang)
+
+    besar <- 0
+    kecil <- 0
+
+    while (jumlahOrang >= 5) and (besar < 3) then
+        besar <- besar + 1
+        jumlahOrang <- jumlahOrang - 5 
+    endwhile
+
+    if (jumlahOrang >= 1) and (besar < 3) then 
+        besar <- besar + 1
+        jumlahOrang <- jumlahOrang - jumlahOrang
+    endif
+
+    while (jumlahOrang >= 2) and (kecil < 5) then 
+        kecil <- kecil + 1 
+        jumlahOrang <- jumlahOrang - 2
+    endwhile
+
+    if (jumlahOrang >= 1) and (kecil < 5) then
+        kecil <- kecil + 1 
+        jumlahOrang <- jumlahOrang - jumlahOrang    
+    endif
+
+    if besar > 0 then
+        output("Dewasa", besar)
+    endif
+
+    if kecil > 0 then
+        output(", kecil", kecil)
+    endif
+
+    if jumlahOrang > 0 then
+        output(", dan ", jumlahOrang, " tak berangkat ")
+    endif
+
+endprogram

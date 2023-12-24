@@ -1,0 +1,20 @@
+program konsekutif
+
+kamus
+    x, lastDigit, digitNow : integer
+	isOne : boolean
+algoritma
+    input(x)
+
+    isOne <- true
+
+    while x > 0 and isOne == true do
+        lastDigit <- x mod 10
+        x <- x div 10
+        digitNow <- x mod 10
+        isOne <- (lastDigit - digitNow == 1) or (digitNow - lastDigit == 1)
+        x <- x div 10
+    endwhile
+
+    output(isOne)
+endprogram

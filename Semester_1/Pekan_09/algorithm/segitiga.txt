@@ -1,0 +1,12 @@
+program segitiga
+
+kamus
+    x, y, z : integer
+    hasil : boolean
+algoritma
+    input(x, y, z)
+
+    hasil <- (x + y > z) and (x + z > y) and (y + z > x)
+
+    output(hasil)
+endprogram

@@ -1,0 +1,14 @@
+program faktorBilangan
+
+kamus
+    n, i : integer
+    isFactor : boolean
+algoritma
+    input(n)
+
+    for i <- 1 to n do
+		isFactor <- (n mod i) == 0
+
+		output(i , isFactor)
+	endfor
+endprogram

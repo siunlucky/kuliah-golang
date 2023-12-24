@@ -1,0 +1,19 @@
+program cariDigit
+
+kamus
+    x, y, digit : integer
+	hasil : boolean
+algoritma
+    input(x, y)
+
+	hasil = false
+	while y > 0 do
+		digit <- y mod 10
+		if digit == x then
+			hasil <- true
+		endif
+		y <- y div 10
+	endwhile
+
+	output(hasil)
+endprogram

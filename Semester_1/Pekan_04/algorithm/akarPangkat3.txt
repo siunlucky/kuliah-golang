@@ -1,0 +1,12 @@
+program akarPangkat3
+
+kamus
+    x, y : integer
+	isRoot : boolean
+algoritma
+    input(x, y)
+
+	isRoot <- (x * x * x) == y
+
+	output(isRoot)
+endprogram
